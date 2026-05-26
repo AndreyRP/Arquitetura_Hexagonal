@@ -1,5 +1,5 @@
 # Arquitetura_Hexagonal
-## 🏗️ Justificativa da Arquitetura Escolhida (Hexagonal Architecture)
+## Justificativa da Arquitetura Escolhida (Hexagonal Architecture)
 
 Para o desenvolvimento deste microsserviço de auditoria e tratamento de mensagens falhas (`deadmessages`), optou-se pela utilização da **Arquitetura Hexagonal** (também conhecida como *Ports and Adapters*). 
 
