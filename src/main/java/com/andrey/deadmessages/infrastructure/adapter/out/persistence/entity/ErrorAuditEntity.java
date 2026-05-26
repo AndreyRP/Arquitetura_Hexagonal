@@ -6,9 +6,8 @@ import java.util.UUID;
 import com.andrey.deadmessages.core.model.Severity;
 import com.andrey.deadmessages.core.model.Status;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.databind.annotation.EnumNaming;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,12 +26,15 @@ public class ErrorAuditEntity {
 
     private String queueName;
 
+    @Column(columnDefinition = "TEXT")
     private String payload;
 
     private Instant timestamp;
 
+    @Enumerated(EnumType.STRING)
     private Status status;
 
+    @Enumerated(EnumType.STRING)
     private Severity severity;
 
 }

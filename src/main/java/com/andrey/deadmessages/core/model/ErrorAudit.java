@@ -3,6 +3,7 @@ package com.andrey.deadmessages.core.model;
 import java.time.Instant;
 import java.util.UUID;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class ErrorAudit {
 
     private String queueName;
 
+    @Column(columnDefinition = "TEXT")
     private String payload;
 
     private Instant timestamp;

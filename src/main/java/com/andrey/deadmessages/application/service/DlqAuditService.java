@@ -38,7 +38,7 @@ public class DlqAuditService {
             ErrorAudit audit =
                     ErrorAudit.builder()
                             .errorId(UUID.randomUUID())
-                            .queueName("T0XN_andrey_original")
+                            .queueName("ANDREY PINHEIRO")
                             .payload(payload)
                             .timestamp(Instant.now())
                             .status(Status.PENDING_ANALYSIS)
